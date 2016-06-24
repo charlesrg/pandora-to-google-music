@@ -325,7 +325,7 @@ def pandora_to_google_music(pandora_email, pandora_password, gmusic_email, gmusi
     """ Sync Pandora likes with Google Music playlists """
 
     gmusic_client = Mobileclient()
-    gmusic_client.login(gmusic_email, gmusic_password)
+    gmusic_client.login(gmusic_email, gmusic_password, 'pandora')
 
     pandora_client = PandoraClient(pandora_email, pandora_password)
 
